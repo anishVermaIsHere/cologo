@@ -1,0 +1,74 @@
+
+
+
+footer {
+    background-color: var(--dark);
+}
+
+.footer-top {
+    border-bottom: 1px solid #f2f2f248;
+    padding: 3rem 0 0.8rem 0;
+}
+.company-info .about-company {
+    margin-top: 1rem;
+}
+.company-info .about-company p {
+    color: var(--gray-text);
+}
+
+.company-social-links {
+    margin-top: 5.5rem;
+}
+
+.company-social-links .social-links .social-link-li a svg {
+    width: 1rem;
+    height: 1rem;
+}
+.company-social-links .social-links .social-link-li a:hover {
+    background-color: #f2f2f2;
+    transition: all 0.3s;
+}
+.company-social-links .social-links .social-link-li a:hover svg {
+    color: var(--dark);
+}
+
+.footer-links,
+.footer-contacts {
+    color: #f2f2f2;
+}
+.footer-links  ul li,
+.footer-contacts  ul li {
+    padding: 0.5rem 0;
+}
+
+.footer-links  ul li a,
+.footer-contacts ul li a {
+    color: var(--gray-text);
+}
+
+.subscribe .subscribe-form {
+    display: flex;
+    justify-content: start;
+    width: 100%;
+}
+.subscribe .subscribe-form .form-field input[type="email"] {
+    padding: 0.8rem 1.5rem;
+    border-radius: 6px;
+    outline: none;
+    border: 1px solid var(--gray-text);
+    background:none;
+    color: #fff;
+    width: 100%;
+}
+
+.subscribe .subscribe-form .form-btn .btn {
+    color: #fff;
+    background:var(--dark-blue);
+    font-size: 1rem;
+    padding: 0.8rem 1.2rem;
+}
+
+.footer-bottom {
+    padding: 1rem 0;
+    font-size: 0.9rem;
+}

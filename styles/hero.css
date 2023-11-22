@@ -1,0 +1,91 @@
+
+
+.hero-section {
+    background-color: var(--secondary-bg);
+    position: relative;
+}
+
+.hero-section .hero-background {
+    height: 38.75rem;
+}
+
+.hero-section .hero-background .hero-slider {
+    left: 0;
+    /* transform: translateX(50%); */
+}
+
+.hero-section .hero-background .hero-slider .hero-slide {
+    position: absolute;
+    /* left:-50%; */
+    left:0;
+    opacity: 1;
+    padding-block: 3rem;
+    width: 100%;
+    min-height: 38.75rem;
+    display: flex;
+    align-items: center;
+    background-image: url('https://icm.aexp-static.com/content/dam/contenthub/us/en/ach-images/2022/11/leadership-skills-header.jpeg?imwidth=968');
+    /* background-image: url('https://www.cio.com/wp-content/uploads/2023/07/iStock-1453843862.jpg?quality=50&strip=all'); */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.hero-section .hero-background .hero-slider .hero-slide .hero-content {
+    max-width: 30rem;
+    width: 100%;
+    margin-inline: 0.5rem;
+    padding: 0 0 3.75rem 0;
+}
+
+.hero-section .hero-background .hero-slider .hero-slide .hero-content .get-started {
+    min-width: 0 !important;
+    padding: 0.8rem 1.5rem !important;
+}
+
+
+
+/* styles for small screen devices  START */
+
+@media (max-width:1100px) {
+    .hero-section .hero-background .hero-slider .hero-slide::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left:0;
+        background-color: #fff;
+        opacity: 0.6;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+@media (max-width:768px){
+    .hero-section .hero-background {
+        height: 25rem;
+    }
+    .hero-section .hero-background .hero-slider .hero-slide {
+        min-height: 25rem;
+        height: 100%;
+    }
+    .hero-section .hero-background .hero-slider .hero-slide .hero-content {
+        padding:0;   
+    }
+}
+
+@media (max-width:576px){
+    .hero-section .hero-background {
+        height: 20rem;
+    }
+    .hero-section .hero-background .hero-slider .hero-slide {
+        height: 100%;
+        padding-block: 1rem;
+    }
+    .hero-section .hero-background .hero-slider .hero-slide .hero-content .get-started {
+        padding: 0.4rem 1rem !important;
+    }
+}
+
+
+/* styles for small screen devices  END */

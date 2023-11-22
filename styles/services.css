@@ -1,0 +1,45 @@
+
+
+.services .service-card .service-card-head .service-icon {
+    display: grid;
+    place-items: center;
+    height: 6rem;
+    width: 6rem;
+    min-width: 6rem;
+    margin-bottom: 1.2rem;
+    font-size: 50px;
+    background-image:linear-gradient(to right,var(--dark-blue),var(--light-blue));
+    border-radius: 50%;
+    color: #fff;
+}
+
+.services .service-card .service-card-head .service-icon svg {
+    height: 3.6rem;
+    width: 3.6rem;
+}
+
+.services .service-card .service-card-body > h4 {
+    font-weight: 600;
+    color: #181818;
+}
+.services .service-card .service-card-body > p {
+    color: #181818;
+}
+
+.services .service-card:hover {
+    background-image:linear-gradient(to right,var(--dark-blue),var(--light-blue));
+    box-shadow:2px 4px 20px 1px rgba(45, 45, 45, 0.13);
+}
+
+.services .service-card:hover .service-icon{
+    background:#fff;
+    color:var(--dark-blue);
+}
+.services .service-card:hover .service-card-body > h4,
+.services .service-card:hover .service-card-body > p {
+    color:#fff;
+}
+
+.aaero {
+    margin-left: 5px;
+}

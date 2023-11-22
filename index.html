@@ -1,0 +1,759 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <script type="module" src="/scripts/index.js"></script>
+</head>
+<body>
+
+  <div class="app-container position-relative w-100">
+    <div class="bg-layout" id="bg-layout">
+    </div>
+
+    <!-- sidebar menu START -->
+    <aside class="sidebar-menu" id="sidebar-menu">
+        <div class="close-sidebar">
+            <button class="close-sidebar-btn" id="close-sidebar-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentcolor"><path d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"></path></svg>
+            </button>
+        </div>
+        <div class="sidebar-menu-content">
+            <div class="d-flex ps-3 w-100">
+                <h5 class="px-2" style="border-radius: 0.375rem; border: 3px solid var(--light-blue); width: fit-content;">
+                    <span style="font-size:1.3rem; font-weight:600;">Co</span>
+                    <span style="font-size:1.3rem; font-weight:600; color: var(--light-blue);">Logo</span>
+                 </h5>
+            </div>
+            
+            <ul class="sidbebar-menu-list">
+                <li class="sidemenu-list-item">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="sidemenu-list-item">
+                    <a href="#">Services</a>
+                    <div class="arrow-icon down">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path></svg>
+                    </div>
+                    <div class="arrow-icon up">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="m6.293 13.293 1.414 1.414L12 10.414l4.293 4.293 1.414-1.414L12 7.586z"></path></svg>
+                    </div>
+                    <div class="sidemenu-sub-menu-section">
+                        <ul>
+                            <li><a href="#">Services 1</a></li>
+                            <li><a href="#">Services 2</a></li>
+                            <li><a href="#">Services 3</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="sidemenu-list-item">
+                    <a href="#">Gallery</a>
+                    <div class="arrow-icon down">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path></svg>
+                    </div>
+                    <div class="arrow-icon up">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="m6.293 13.293 1.414 1.414L12 10.414l4.293 4.293 1.414-1.414L12 7.586z"></path></svg>
+                    </div>
+                    <div class="sidemenu-sub-menu-section">
+                        <ul>
+                            <li><a href="#">Gallery 1</a></li>
+                            <li><a href="#">Gallery 2</a></li>
+                            <li><a href="#">Gallery 3</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="sidemenu-list-item">
+                    <a href="#">News</a>
+                    <div class="arrow-icon down">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path></svg>
+                    </div>
+                    <div class="arrow-icon up">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="m6.293 13.293 1.414 1.414L12 10.414l4.293 4.293 1.414-1.414L12 7.586z"></path></svg>
+                    </div>
+                    <div class="sidemenu-sub-menu-section">
+                        <ul>
+                            <li><a href="#">News 1</a></li>
+                            <li><a href="#">News 2</a></li>
+                            <li><a href="#">News 3</a></li>
+                        </ul>
+                    </div>
+                </li>
+                
+                <li class="sidemenu-list-item">
+                    <a href="#">About Us</a>
+                </li>
+                <li class="sidemenu-list-item">
+                    <a href="#">Contact Us</a>
+                </li>
+            </ul>
+
+            <div class="sidebar-footer">
+                <div class="sidebar-social-links">
+                    <ul class="social-links justify-content-center">
+                        <li class="social-link-li">
+                            <a href="#" title="Facebook">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentcolor"><path d="M13.397 20.997v-8.196h2.765l.411-3.209h-3.176V7.548c0-.926.258-1.56 1.587-1.56h1.684V3.127A22.336 22.336 0 0 0 14.201 3c-2.444 0-4.122 1.492-4.122 4.231v2.355H7.332v3.209h2.753v8.202h3.312z"></path></svg>
+                            </a>
+                        </li>
+                        <li class="social-link-li">
+                            <a href="#" title="Instagram">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentcolor"><path d="M11.999 7.377a4.623 4.623 0 1 0 0 9.248 4.623 4.623 0 0 0 0-9.248zm0 7.627a3.004 3.004 0 1 1 0-6.008 3.004 3.004 0 0 1 0 6.008z"></path><circle cx="16.806" cy="7.207" r="1.078"></circle><path d="M20.533 6.111A4.605 4.605 0 0 0 17.9 3.479a6.606 6.606 0 0 0-2.186-.42c-.963-.042-1.268-.054-3.71-.054s-2.755 0-3.71.054a6.554 6.554 0 0 0-2.184.42 4.6 4.6 0 0 0-2.633 2.632 6.585 6.585 0 0 0-.419 2.186c-.043.962-.056 1.267-.056 3.71 0 2.442 0 2.753.056 3.71.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632 6.584 6.584 0 0 0 2.185.45c.963.042 1.268.055 3.71.055s2.755 0 3.71-.055a6.615 6.615 0 0 0 2.186-.419 4.613 4.613 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.186.043-.962.056-1.267.056-3.71s0-2.753-.056-3.71a6.581 6.581 0 0 0-.421-2.217zm-1.218 9.532a5.043 5.043 0 0 1-.311 1.688 2.987 2.987 0 0 1-1.712 1.711 4.985 4.985 0 0 1-1.67.311c-.95.044-1.218.055-3.654.055-2.438 0-2.687 0-3.655-.055a4.96 4.96 0 0 1-1.669-.311 2.985 2.985 0 0 1-1.719-1.711 5.08 5.08 0 0 1-.311-1.669c-.043-.95-.053-1.218-.053-3.654 0-2.437 0-2.686.053-3.655a5.038 5.038 0 0 1 .311-1.687c.305-.789.93-1.41 1.719-1.712a5.01 5.01 0 0 1 1.669-.311c.951-.043 1.218-.055 3.655-.055s2.687 0 3.654.055a4.96 4.96 0 0 1 1.67.311 2.991 2.991 0 0 1 1.712 1.712 5.08 5.08 0 0 1 .311 1.669c.043.951.054 1.218.054 3.655 0 2.436 0 2.698-.043 3.654h-.011z"></path></svg>
+                            </a>
+                        </li>
+                        <li class="social-link-li">
+                            <a href="#" title="Linkedin">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentcolor"><circle cx="4.983" cy="5.009" r="2.188"></circle><path d="M9.237 8.855v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118 1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66H9.237zm-6.142 0H6.87v12.139H3.095z"></path></svg>
+                            </a>
+                        </li>
+                        <li class="social-link-li">
+                            <a href="#" title="Youtube">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentcolor"><path d="M21.593 7.203a2.506 2.506 0 0 0-1.762-1.766C18.265 5.007 12 5 12 5s-6.264-.007-7.831.404a2.56 2.56 0 0 0-1.766 1.778c-.413 1.566-.417 4.814-.417 4.814s-.004 3.264.406 4.814c.23.857.905 1.534 1.763 1.765 1.582.43 7.83.437 7.83.437s6.265.007 7.831-.403a2.515 2.515 0 0 0 1.767-1.763c.414-1.565.417-4.812.417-4.812s.02-3.265-.407-4.831zM9.996 15.005l.005-6 5.207 3.005-5.212 2.995z"></path></svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+    </aside>
+    <!-- sidebar menu END -->
+
+    <header>
+        <nav class="navbar-section">
+            <div class="top-nav">
+                <div class="container">
+                    <div class="row d-flex justify-content-between">
+                        <ul class="col-auto contact-links">
+                            <li class="contact-link-li">
+                                <a href="mailto:abcxxx@test.com">
+                                    <span class="me-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"  fill="currentcolor"><path d="M20 4H4c-1.103 0-2 .897-2 2v12c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zm0 2v.511l-8 6.223-8-6.222V6h16zM4 18V9.044l7.386 5.745a.994.994 0 0 0 1.228 0L20 9.044 20.002 18H4z"></path></svg>
+                                    </span>
+                                    abcxxx@test.com
+                                </a>
+                            </li>
+                            <li class="contact-link-li">
+                                <a href="tel:1234567890">
+                                    <span class="me-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"  fill="currentcolor"><path d="M20 10.999h2C22 5.869 18.127 2 12.99 2v2C17.052 4 20 6.943 20 10.999z"></path><path d="M13 8c2.103 0 3 .897 3 3h2c0-3.225-1.775-5-5-5v2zm3.422 5.443a1.001 1.001 0 0 0-1.391.043l-2.393 2.461c-.576-.11-1.734-.471-2.926-1.66-1.192-1.193-1.553-2.354-1.66-2.926l2.459-2.394a1 1 0 0 0 .043-1.391L6.859 3.513a1 1 0 0 0-1.391-.087l-2.17 1.861a1 1 0 0 0-.29.649c-.015.25-.301 6.172 4.291 10.766C11.305 20.707 16.323 21 17.705 21c.202 0 .326-.006.359-.008a.992.992 0 0 0 .648-.291l1.86-2.171a1 1 0 0 0-.086-1.391l-4.064-3.696z"></path></svg>
+                                    </span>
+                                    +123-456-7890
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="col-auto social-links">
+                            <li class="social-link-li">
+                                <a href="#" title="Facebook">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"  fill="currentcolor"><path d="M13.397 20.997v-8.196h2.765l.411-3.209h-3.176V7.548c0-.926.258-1.56 1.587-1.56h1.684V3.127A22.336 22.336 0 0 0 14.201 3c-2.444 0-4.122 1.492-4.122 4.231v2.355H7.332v3.209h2.753v8.202h3.312z"></path></svg>
+                                </a>
+                            </li>
+                            <li class="social-link-li">
+                                <a href="#" title="Instagram">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"  fill="currentcolor"><path d="M11.999 7.377a4.623 4.623 0 1 0 0 9.248 4.623 4.623 0 0 0 0-9.248zm0 7.627a3.004 3.004 0 1 1 0-6.008 3.004 3.004 0 0 1 0 6.008z"></path><circle cx="16.806" cy="7.207" r="1.078"></circle><path d="M20.533 6.111A4.605 4.605 0 0 0 17.9 3.479a6.606 6.606 0 0 0-2.186-.42c-.963-.042-1.268-.054-3.71-.054s-2.755 0-3.71.054a6.554 6.554 0 0 0-2.184.42 4.6 4.6 0 0 0-2.633 2.632 6.585 6.585 0 0 0-.419 2.186c-.043.962-.056 1.267-.056 3.71 0 2.442 0 2.753.056 3.71.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632 6.584 6.584 0 0 0 2.185.45c.963.042 1.268.055 3.71.055s2.755 0 3.71-.055a6.615 6.615 0 0 0 2.186-.419 4.613 4.613 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.186.043-.962.056-1.267.056-3.71s0-2.753-.056-3.71a6.581 6.581 0 0 0-.421-2.217zm-1.218 9.532a5.043 5.043 0 0 1-.311 1.688 2.987 2.987 0 0 1-1.712 1.711 4.985 4.985 0 0 1-1.67.311c-.95.044-1.218.055-3.654.055-2.438 0-2.687 0-3.655-.055a4.96 4.96 0 0 1-1.669-.311 2.985 2.985 0 0 1-1.719-1.711 5.08 5.08 0 0 1-.311-1.669c-.043-.95-.053-1.218-.053-3.654 0-2.437 0-2.686.053-3.655a5.038 5.038 0 0 1 .311-1.687c.305-.789.93-1.41 1.719-1.712a5.01 5.01 0 0 1 1.669-.311c.951-.043 1.218-.055 3.655-.055s2.687 0 3.654.055a4.96 4.96 0 0 1 1.67.311 2.991 2.991 0 0 1 1.712 1.712 5.08 5.08 0 0 1 .311 1.669c.043.951.054 1.218.054 3.655 0 2.436 0 2.698-.043 3.654h-.011z"></path></svg>
+                                </a>
+                            </li>
+                            <li class="social-link-li">
+                                <a href="#" title="Linkedin">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentcolor"><circle cx="4.983" cy="5.009" r="2.188"></circle><path d="M9.237 8.855v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118 1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66H9.237zm-6.142 0H6.87v12.139H3.095z"></path></svg>
+                                </a>
+                            </li>
+                            <li class="social-link-li">
+                                <a href="#" title="Youtube">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"  fill="currentcolor"><path d="M21.593 7.203a2.506 2.506 0 0 0-1.762-1.766C18.265 5.007 12 5 12 5s-6.264-.007-7.831.404a2.56 2.56 0 0 0-1.766 1.778c-.413 1.566-.417 4.814-.417 4.814s-.004 3.264.406 4.814c.23.857.905 1.534 1.763 1.765 1.582.43 7.83.437 7.83.437s6.265.007 7.831-.403a2.515 2.515 0 0 0 1.767-1.763c.414-1.565.417-4.812.417-4.812s.02-3.265-.407-4.831zM9.996 15.005l.005-6 5.207 3.005-5.212 2.995z"></path></svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-nav">       
+                <div class="container">
+                    <div class="nav-wrapper d-flex justify-content-between">
+                        <div>
+                            <h5 class="px-2" style="border-radius: 0.375rem; border: 3px solid var(--light-blue); width: fit-content;">
+                                <span style="font-size:1.3rem; font-weight:600;">Co</span>
+                                <span style="font-size:1.3rem; font-weight:600; color: var(--light-blue);">Logo</span>
+                             </h5>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <ul id="main-navlink-section" class="nav-links p-0 m-0">
+                                <li class="nav-link-li">
+                                    <a href="#">
+                                        Services
+                                        <span class="arrow-down">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentcolor"><path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path></svg>
+                                        </span>
+                                    </a>
+                                    <div class="nav-link-dropdown">
+                                        <ul class="dropdown-list p-0 m-0">
+                                            <li class="dropdown-item">
+                                                <a href="#">Service 1</a>
+                                            </li>
+                                            <li class="dropdown-item">
+                                                <a href="#">Service 2</a>
+                                            </li>
+                                            <li class="dropdown-item">
+                                                <a href="#">Service 3</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="nav-link-li">
+                                    <a href="#">
+                                        Gallery
+                                        <span class="arrow-down">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentcolor"><path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path></svg>
+                                        </span>
+                                    </a>
+                                    <div class="nav-link-dropdown">
+                                        <ul class="dropdown-list p-0 m-0">
+                                            <li class="dropdown-item">
+                                                <a href="#">Gallery 1</a>
+                                            </li>
+                                            <li class="dropdown-item">
+                                                <a href="#">Gallery 2</a>
+                                            </li>
+                                            <li class="dropdown-item">
+                                                <a href="#">Gallery 3</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="nav-link-li">
+                                    <a href="#">
+                                        News
+                                        <span class="arrow-down">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentcolor"><path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path></svg>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="nav-link-li">
+                                    <a href="#">
+                                        About Us
+                                    </a>
+                                </li>
+                                <li class="nav-link-li">
+                                    <a href="#">
+                                        Contact Us
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <!-- navbar search section START -->
+                            <div class="navbar-search-section ms-2">
+                                <div class="search-actions">
+                                    <span class="close-search-icon" id="close-search-icon" style="display: none;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="28" viewBox="0 0 24 24" fill="currentcolor"><path d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"></path></svg>
+                                    </span>
+                                    <span class="search-icon" id="nav-search-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentcolor"><path d="M10 18a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396 1.414-1.414-4.396-4.396A7.952 7.952 0 0 0 18 10c0-4.411-3.589-8-8-8s-8 3.589-8 8 3.589 8 8 8zm0-14c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6z"></path></svg>
+                                    </span>
+                                </div>
+        
+                                <form class="navbar-searchbox-form" id="navbar-searchbox-form">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="form-field d-flex">
+                                                    <!-- <label for="field-search" class="form-field-label">Search...</label> -->
+                                                    <input type="search" class="form-control" name="search" value="" placeholder="Search..." autocomplete="off" required="required" id="field-search">
+                                                    <button type="submit" class="btn header-search-btn">
+                                                        <!-- <span class="search-icon"> -->
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentcolor"><path d="M10 18a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396 1.414-1.414-4.396-4.396A7.952 7.952 0 0 0 18 10c0-4.411-3.589-8-8-8s-8 3.589-8 8 3.589 8 8 8zm0-14c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6z"></path></svg>
+                                                        <!-- </span> -->
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>      
+                            <!-- navbar search section END -->
+                        </div>
+                    </div>
+                </div>     
+                
+            </div>
+        </nav>
+
+        <!-- small screen navbar START -->
+        <nav class="small-navbar-section">
+            <div class="container small-navbar-container">       
+                <div class="row">
+                    <div class="col">
+                        <div class="small-navbar d-flex justify-content-between">
+                            <div class="d-flex align-items-center">
+                                <div class="hambg-icon me-4" id="hambg-button">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="currentcolor"><path d="M4 11h12v2H4zm0-5h16v2H4zm0 12h7.235v-2H4z"></path></svg>
+                                </div>
+                                <h5 class="px-2 pb-1 mb-0" style="border-radius: 0.375rem; border: 3px solid var(--light-blue); width: fit-content;">
+                                    <span style="font-size:1rem; font-weight:600;">Co</span>
+                                    <span style="font-size:1rem; font-weight:600; color:var(--light-blue);">Logo</span>
+                                 </h5>
+                            </div>
+                            
+
+                             <div class="d-flex justify-content-between align-items-center">
+                                <!-- <div class="search-actions">
+                                    <span class="search-icon" id="small-search-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentcolor"><path d="M10 18a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396 1.414-1.414-4.396-4.396A7.952 7.952 0 0 0 18 10c0-4.411-3.589-8-8-8s-8 3.589-8 8 3.589 8 8 8zm0-14c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6z"></path></svg>
+                                    </span>
+                                </div> -->
+                                <form class="navbar-searchbox-form" id="navbar-searchbox-form">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="form-field d-flex bg-white" style="border-radius: 0.325rem !important;">
+                                                    <input type="search" class="form-control" style="height: 40px !important;" name="search" value="" placeholder="Search..." autocomplete="off" required="required" id="field-search">
+                                                    <button type="submit" class="btn header-search-btn">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#000"><path d="M10 18a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396 1.414-1.414-4.396-4.396A7.952 7.952 0 0 0 18 10c0-4.411-3.589-8-8-8s-8 3.589-8 8 3.589 8 8 8zm0-14c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6z"></path></svg>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>     
+            </div>
+        </nav>
+        <!-- small screen navbar END -->
+        
+    </header>
+    <main>
+        <!-- Hero START -->
+        <section class="hero-section">
+            <article class="hero-background" id="hero-background">
+                <div class="hero-slider">
+                    <div class="hero-slide" id="hero-slide">
+                        <div class="container position-relative">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="hero-content">
+                                        <div class="hero-heading">
+                                            <p class="section-sub-head-title">HERO</p>
+                                            <h1 class="fw-bold mb-4">
+                                                <span class="fs-1">Grow your Business with </span>
+                                                <span style="color:var(--light-blue);">AI</span> 
+                                                from one place
+                                            </h1>
+                                            <p class="section-desc lh-lg" style="color:var(--light-text)">
+                                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                                                A voluptatem, accusantium minus autem itaque veniam tenetur nihil blanditiis soluta dolores eum! Dolorem labore et harum perferendis eveniet voluptates rem repellat.
+                                            </p>
+                                        </div>
+                                        <div class="button-group mt-4">
+                                            <a href="#" class="btn get-started">
+                                                <span>Get started</span>
+                                                <span>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentcolor"><path d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"></path></svg>
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <!-- Hero END -->
+     
+        <!-- Services START -->
+        <section class="section services-section">
+            <div class="container">
+                <article class="row justify-content-start services">
+                    <div class="services-heading col-12">
+                        <p class="section-sub-head-title mb-3">FEATURES & SERVICES</p>
+                        <h2>Our Services</h2>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <a href="#" class="service-card">
+                            <div class="service-card-head">
+                                <div class="service-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentcolor"><path d="M19 2H9c-1.103 0-2 .897-2 2v6H5c-1.103 0-2 .897-2 2v9a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4c0-1.103-.897-2-2-2zM5 12h6v8H5v-8zm14 8h-6v-8c0-1.103-.897-2-2-2H9V4h10v16z"></path><path d="M11 6h2v2h-2zm4 0h2v2h-2zm0 4.031h2V12h-2zM15 14h2v2h-2zm-8 .001h2v2H7z"></path></svg>
+                                </div>
+                            </div>
+                            <div class="service-card-body">
+                                <h4>Corporate Solution</h4>
+                                <p class="lh-lg">
+                                    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <a href="#" class="service-card">
+                            <div class="service-card-head">
+                                <div class="service-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentcolor"><path d="M12 2C6.486 2 2 6.486 2 12v4.143C2 17.167 2.897 18 4 18h1a1 1 0 0 0 1-1v-5.143a1 1 0 0 0-1-1h-.908C4.648 6.987 7.978 4 12 4s7.352 2.987 7.908 6.857H19a1 1 0 0 0-1 1V18c0 1.103-.897 2-2 2h-2v-1h-4v3h6c2.206 0 4-1.794 4-4 1.103 0 2-.833 2-1.857V12c0-5.514-4.486-10-10-10z"></path></svg>
+                                </div>
+                            </div>
+                            <div class="service-card-body">
+                                <h4>Call Center Solutions</h4>
+                                <p class="lh-lg">
+                                    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <a href="#" class="service-card">
+                            <div class="service-card-head">
+                                <div class="service-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentcolor"><path d="M18.944 11.112C18.507 7.67 15.56 5 12 5 9.244 5 6.85 6.61 5.757 9.149 3.609 9.792 2 11.82 2 14c0 2.657 2.089 4.815 4.708 4.971V19H17.99v-.003L18 19c2.206 0 4-1.794 4-4a4.008 4.008 0 0 0-3.056-3.888zM8 12h3V9h2v3h3l-4 5-4-5z"></path></svg>
+                                </div>
+                            </div>
+                            <div class="service-card-body">
+                                <h4>Cloud Development</h4>
+                                <p class="lh-lg">
+                                    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12 see-all-services">
+                        <a href="#">
+                            <span class="me-2">See All Services</span>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentcolor"><path d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"></path></svg>
+                            </span>
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <!-- Services END -->
+
+        <!-- Testimonials START -->
+        <section class="section testimonial-section">
+            <div class="container">
+                <article class="row justify-content-start testimonial">
+                    <div class="testimonial-heading col-12">
+                        <p class="section-sub-head-title mb-3">TESTIMONIALS</p>
+                        <h2>What People Say</h2>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="testimonial-card">
+                            <div class="testimonial-card-head">
+                                <div class="testimonial-user-image-container">
+                                    <img src="/assets/images/users/1.jpg" alt="user-1" />
+                                </div>
+                                <div class="testimonial-user-heading">
+                                    <h5 class="mb-1">Lily Paul</h5>
+                                    <p class="mb-0">Regular client</p>
+                                </div>
+                            </div>
+                            <div class="testimonial-card-body">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem cupiditate odit quis voluptates voluptas vel sed impedit illo? Consequuntur id, corporis libero accusamus minima deserunt blanditiis fuga dolorem cumque possimus?
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="testimonial-card">
+                            <div class="testimonial-card-head">
+                                <div class="testimonial-user-image-container">
+                                    <img src="/assets/images/users/2.jpg" alt="user-1" />
+                                </div>
+                                <div class="testimonial-user-heading">
+                                    <h5 class="mb-1">Olivia Miller</h5>
+                                    <p class="mb-0">Regular client</p>
+                                </div>
+                            </div>
+                            <div class="testimonial-card-body">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem cupiditate odit quis voluptates voluptas vel sed impedit illo? Consequuntur id, corporis libero accusamus minima deserunt blanditiis fuga dolorem cumque possimus?
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="testimonial-card">
+                            <div class="testimonial-card-head">
+                                <div class="testimonial-user-image-container">
+                                    <img src="/assets/images/users/3.jpg" alt="user-1" />
+                                </div>
+                                <div class="testimonial-user-heading">
+                                    <h5 class="mb-1">Nick James</h5>
+                                    <p class="mb-0">Regular client</p>
+                                </div>
+                            </div>
+                            <div class="testimonial-card-body">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem cupiditate odit quis voluptates voluptas vel sed impedit illo? Consequuntur id, corporis libero accusamus minima deserunt blanditiis fuga dolorem cumque possimus?
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 see-all-testimonials">
+                        <a href="#">
+                            <span class="me-2">See All Reviews</span>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentcolor"><path d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"></path></svg>
+                            </span>
+                        </a>
+                    </div>
+                </article>
+            </div>
+            
+        </section>
+        <!-- Testimonials END -->
+
+         <!-- Contact START -->
+         <section class="section contact-section">
+            <div class="container">
+                <article class="row justify-content-start contact">
+                    <div class="contact-heading col-12">
+                        <p class="section-sub-head-title">CONTACT US</p>
+                        <h2 class="">Get in Touch</h2>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-12">
+                        <div class="contact-form">
+                           <form id="contact-form" name="contact-form" method="POST" action="#!">
+                                <div class="form-group position-relative">
+                                    <input type="text" name="contact-name" class="form-control" id="contact-name" placeholder="Your Name" required>
+                                    <label id="contact-name-error"></label>
+                                </div>
+                                <div class="form-group position-relative">
+                                    <input type="email" name="contact-email" class="form-control" id="contact-email" placeholder="Your Email" required>
+                                    <label id="contact-email-error"></label>
+                                </div>
+                                <div class="form-group position-relative">
+                                    <input type="text" name="contact-subject" class="form-control" id="contact-subject" placeholder="Subject" required>
+                                    <label id="contact-subject-error"></label>
+                                </div>
+                                <div class="form-group position-relative">
+                                    <textarea rows="7" name="contact-message" class="form-control" id="contact-message" placeholder="Message" required></textarea>
+                                    <label id="contact-message-error"></label>
+                                </div>
+
+                                <div class="col-12 submit-section mt-0 mb-5">
+                                    <button class="btn send-message">
+                                        <span class="me-2">Send Message</span>
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentcolor"><path d="M20 4H6c-1.103 0-2 .897-2 2v5h2V8l6.4 4.8a1.001 1.001 0 0 0 1.2 0L20 8v9h-8v2h8c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zm-7 6.75L6.666 6h12.668L13 10.75z"></path><path d="M2 12h7v2H2zm2 3h6v2H4zm3 3h4v2H7z"></path></svg>
+                                        </span>
+                                    </button>
+                                </div>
+                           </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-12">
+                        <div class="contact-card">
+                            <div class="contact-head text-center">
+                                Contact
+                            </div>
+                            <div class="full-contact-body">
+                                <h4 class="text-left">
+                                    <span class="me-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="currentcolor"><path d="M11.42 21.815a1.004 1.004 0 0 0 1.16 0C12.884 21.598 20.029 16.44 20 10c0-4.411-3.589-8-8-8S4 5.589 4 9.996c-.029 6.444 7.116 11.602 7.42 11.819zM12 4c3.309 0 6 2.691 6 6.004.021 4.438-4.388 8.423-6 9.731-1.611-1.308-6.021-5.293-6-9.735 0-3.309 2.691-6 6-6z"></path><path d="M11 14h2v-3h3V9h-3V6h-2v3H8v2h3z"></path></svg>
+                                    </span>
+                                    <span>301 S Irving BLvd Los Angeles, CA 9020</span>
+                                </h4>
+                                <h4 class="text-left">
+                                    <span class="me-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="currentcolor"><path d="M17 2H7c-1.103 0-2 .897-2 2v16c0 1.103.897 2 2 2h10c1.103 0 2-.897 2-2V4c0-1.103-.897-2-2-2zM7 16.999V5h10l.002 11.999H7z"></path></svg>
+                                    </span>
+                                    <span> +1 323-913-4688</span>
+                                </h4>
+                                <h4 class="text-left">
+                                    <span class="me-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="currentcolor"><path d="M20 4H4c-1.103 0-2 .897-2 2v12c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zm0 2v.511l-8 6.223-8-6.222V6h16zM4 18V9.044l7.386 5.745a.994.994 0 0 0 1.228 0L20 9.044 20.002 18H4z"></path></svg>
+                                    </span>
+                                    <span> abcxxx@test.com</span>
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                   
+                </article>
+            </div>
+            
+        </section>
+        <!-- Contact END -->
+    </main>
+
+    <footer>
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-3 col-lg-3 col-md-5 col-12 mb-5">
+                        <div class="company-info">
+                            <div>
+                                <h5 class="px-2" style="border-radius: 0.375rem; border: 3px solid var(--light-blue); width: fit-content;">
+                                   <span style="font-size:1.4rem; font-weight:600; color:#fff;">Co</span>
+                                   <span style="font-size:1.4rem; font-weight:600; color: var(--light-blue);">Logo</span>
+                                </h5>
+                            </div>
+                            <div class="about-company">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quasi error nulla architecto, odio rerum ut porro corrupti numquam tenetur.
+                                </p>
+                            </div>
+
+                            <div class="company-social-links">
+                                <ul class="social-links">
+                                    <li class="social-link-li">
+                                        <a href="#" title="Facebook">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentcolor"><path d="M13.397 20.997v-8.196h2.765l.411-3.209h-3.176V7.548c0-.926.258-1.56 1.587-1.56h1.684V3.127A22.336 22.336 0 0 0 14.201 3c-2.444 0-4.122 1.492-4.122 4.231v2.355H7.332v3.209h2.753v8.202h3.312z"></path></svg>
+                                        </a>
+                                    </li>
+                                    <li class="social-link-li">
+                                        <a href="#" title="Instagram">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentcolor"><path d="M11.999 7.377a4.623 4.623 0 1 0 0 9.248 4.623 4.623 0 0 0 0-9.248zm0 7.627a3.004 3.004 0 1 1 0-6.008 3.004 3.004 0 0 1 0 6.008z"></path><circle cx="16.806" cy="7.207" r="1.078"></circle><path d="M20.533 6.111A4.605 4.605 0 0 0 17.9 3.479a6.606 6.606 0 0 0-2.186-.42c-.963-.042-1.268-.054-3.71-.054s-2.755 0-3.71.054a6.554 6.554 0 0 0-2.184.42 4.6 4.6 0 0 0-2.633 2.632 6.585 6.585 0 0 0-.419 2.186c-.043.962-.056 1.267-.056 3.71 0 2.442 0 2.753.056 3.71.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632 6.584 6.584 0 0 0 2.185.45c.963.042 1.268.055 3.71.055s2.755 0 3.71-.055a6.615 6.615 0 0 0 2.186-.419 4.613 4.613 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.186.043-.962.056-1.267.056-3.71s0-2.753-.056-3.71a6.581 6.581 0 0 0-.421-2.217zm-1.218 9.532a5.043 5.043 0 0 1-.311 1.688 2.987 2.987 0 0 1-1.712 1.711 4.985 4.985 0 0 1-1.67.311c-.95.044-1.218.055-3.654.055-2.438 0-2.687 0-3.655-.055a4.96 4.96 0 0 1-1.669-.311 2.985 2.985 0 0 1-1.719-1.711 5.08 5.08 0 0 1-.311-1.669c-.043-.95-.053-1.218-.053-3.654 0-2.437 0-2.686.053-3.655a5.038 5.038 0 0 1 .311-1.687c.305-.789.93-1.41 1.719-1.712a5.01 5.01 0 0 1 1.669-.311c.951-.043 1.218-.055 3.655-.055s2.687 0 3.654.055a4.96 4.96 0 0 1 1.67.311 2.991 2.991 0 0 1 1.712 1.712 5.08 5.08 0 0 1 .311 1.669c.043.951.054 1.218.054 3.655 0 2.436 0 2.698-.043 3.654h-.011z"></path></svg>
+                                        </a>
+                                    </li>
+                                    <li class="social-link-li">
+                                        <a href="#" title="Linkedin">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentcolor"><circle cx="4.983" cy="5.009" r="2.188"></circle><path d="M9.237 8.855v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118 1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66H9.237zm-6.142 0H6.87v12.139H3.095z"></path></svg>
+                                        </a>
+                                    </li>
+                                    <li class="social-link-li">
+                                        <a href="#" title="Youtube">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentcolor"><path d="M21.593 7.203a2.506 2.506 0 0 0-1.762-1.766C18.265 5.007 12 5 12 5s-6.264-.007-7.831.404a2.56 2.56 0 0 0-1.766 1.778c-.413 1.566-.417 4.814-.417 4.814s-.004 3.264.406 4.814c.23.857.905 1.534 1.763 1.765 1.582.43 7.83.437 7.83.437s6.265.007 7.831-.403a2.515 2.515 0 0 0 1.767-1.763c.414-1.565.417-4.812.417-4.812s.02-3.265-.407-4.831zM9.996 15.005l.005-6 5.207 3.005-5.212 2.995z"></path></svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 offset-xl-1 col-lg-2 col-md-3 col-5 mb-5">
+                        <div class="footer-links">
+                            <div class="footer-links-heading">
+                                <h5 class="mb-3">Menu</h5>
+                            </div>
+                            <ul>
+                                <li class="footer-nav-link-li">
+                                    <a href="#">About Us</a>
+                                </li>
+                                <li class="footer-nav-link-li">
+                                    <a href="#">Testimonial</a>
+                                </li>
+                                <li class="footer-nav-link-li">
+                                    <a href="#">Gallery</a>
+                                </li>
+                                <li class="footer-nav-link-li">
+                                    <a href="#">News</a>
+                                </li>
+                                <li class="footer-nav-link-li">
+                                    <a href="#">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-md-3 col-7 mb-5">
+                        <div class="footer-links">
+                            <div class="footer-links-heading">
+                                <h5 class="mb-3">What We Offer</h5>
+                            </div>
+                            <ul>
+                                <li class="footer-nav-link-li">
+                                    <a href="#">DB Management</a>
+                                </li>
+                                <li class="footer-nav-link-li">
+                                    <a href="#">IOS/MacOS</a>
+                                </li>
+                                <li class="footer-nav-link-li">
+                                    <a href="#">Android Apps</a>
+                                </li>
+                                <li class="footer-nav-link-li">
+                                    <a href="#">Windows Apps</a>
+                                </li>
+                                <li class="footer-nav-link-li">
+                                    <a href="#">UX & UI</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-12 mb-5">
+                        <div class="footer-contacts">
+                            <div class="footer-contacts-heading">
+                                <h5 class="mb-3">Our Contacts</h5>
+                            </div>
+                            <ul>
+                                <li class="footer-contact-li">
+                                    <span class="me-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentcolor"><path d="M11.42 21.815a1.004 1.004 0 0 0 1.16 0C12.884 21.598 20.029 16.44 20 10c0-4.411-3.589-8-8-8S4 5.589 4 9.996c-.029 6.444 7.116 11.602 7.42 11.819zM12 4c3.309 0 6 2.691 6 6.004.021 4.438-4.388 8.423-6 9.731-1.611-1.308-6.021-5.293-6-9.735 0-3.309 2.691-6 6-6z"></path><path d="M11 14h2v-3h3V9h-3V6h-2v3H8v2h3z"></path></svg>
+                                    </span>
+                                    <span>301 S Irving BLvd Los Angeles, CA 9020</span>
+                                </li>
+                                <li class="footer-contact-li">
+                                    <a href="tel:+1 323-913-4688">
+                                        <span class="me-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentcolor"><path d="M17 2H7c-1.103 0-2 .897-2 2v16c0 1.103.897 2 2 2h10c1.103 0 2-.897 2-2V4c0-1.103-.897-2-2-2zM7 16.999V5h10l.002 11.999H7z"></path></svg>
+                                        </span>
+                                        +1 323-913-4688
+                                    </a>
+                                </li>
+                                <li class="footer-contact-li">
+                                    <a href="mailto:abcxxx@test.com">
+                                        <span class="me-2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentcolor"><path d="M20 4H4c-1.103 0-2 .897-2 2v12c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zm0 2v.511l-8 6.223-8-6.222V6h16zM4 18V9.044l7.386 5.745a.994.994 0 0 0 1.228 0L20 9.044 20.002 18H4z"></path></svg>
+                                        </span>
+                                        abcxxx@test.com
+                                    </a>
+                                </li>
+                                
+                            </ul>
+
+                            <div class="subscribe mt-4">
+                                <div class="footer-subscribe-heading">
+                                    <h5 class="mb-3">Subscribe</h5>
+                                </div>
+                                <form name="subscribe-form" class="subscribe-form" method="POST" action="#!">
+                                    <div class="form-field position-relative w-100 me-2">
+                                        <input type="email" class="form-field-input" id="subscribe-email" name="subscribe-email" value="" autocomplete="off"  placeholder="Your email" required >
+                                        <label id="subscribe-error"></label>
+                                    </div>
+                                    <div class="form-btn">
+                                        <button type="submit" class="btn">
+                                            Subscribe
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-md-auto col-12 item">
+                        <nav class="footer-links">
+                            <ul class="d-flex justify-content-center">
+                                <li class="me-4"><a href="#">Terms and Conditions</a></li>
+                                <li class="me-4"><a href="#">Privacy Policy</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-md-auto col-12 d-flex justify-content-center">
+                        <div class="copyright text-white">
+                            <p class="mb-0">
+                                <span>© 2023 Co Logo.</span>
+                                <span>All rights reserved.</span>
+                                <span class="ms-2">Designed by Anish Verma</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,61 @@
+
+.form-control {
+    height: 60px !important;
+    padding: 0.85rem 0.75rem;
+    background: #fff !important;
+    color: #000 !important;
+    font-size: 1.2rem;
+    border-radius: 0px;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border: 1px solid #ebebeb;
+}
+
+.contact .contact-form form .form-group {
+    margin-bottom: 1.5rem;
+}
+
+.contact .contact-form .submit-section {
+    justify-content: start !important;
+}
+
+.contact .contact-form .submit-section > button {
+    padding: 0.8rem 1rem !important;
+    min-width: 0 !important;
+}
+
+textarea.form-control {
+    height: inherit !important;
+}
+
+.address-section {
+    margin-top: 1rem;
+}
+
+.address-section p {
+    text-align: left;
+    color: var(--light-text);
+    font-size: 1.2rem;
+}
+
+.contact .contact-card {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    background-color: var(--secondary-bg);
+    height: 100%;
+    padding: 1rem 1.5rem;
+}
+.contact .contact-card .contact-head {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.contact .contact-card .full-contact-body > h4 {
+    color: var(--light-text);
+    font-family: var(--font-sec);
+    font-weight: 400;
+    margin-block:1.8rem;
+}
+

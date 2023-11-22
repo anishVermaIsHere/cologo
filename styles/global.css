@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+* {
+    margin:0;
+    padding:0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-bg:rgb(23, 177, 237);
+    --secondary-bg:#F0F4F8;
+    --font-prim:'Poppins', 'sans-serif';
+    --font-sec:'Roboto', 'sans-serif';
+    --dark-blue: #1859B4;
+    --light-blue: #0467F1;
+    --dark: #303036;
+    --gray-text:#dfdfdf;
+    --light-text:rgb(94, 93, 93);
+}
+
+
+body {
+    font-family: var(--font-prim) !important;
+}
+
+a {
+    text-decoration: none !important;
+    display: flex;
+    align-items: center;
+}
+
+h2 {
+    font-size: 2.5rem !important;
+    font-weight: 600 !important;
+}
+
+p,li,input,label,textarea {
+    font-family: var(--font-sec) !important;
+}
+
+ul {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+

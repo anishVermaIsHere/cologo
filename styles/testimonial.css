@@ -1,0 +1,36 @@
+
+.testimonial-section {
+    background-color: var(--secondary-bg);
+}
+
+.testimonial .testimonial-card .testimonial-card-head {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.testimonial .testimonial-card .testimonial-card-head .testimonial-user-image-container {
+    border-radius: 50%;
+    overflow: hidden;
+}
+.testimonial .testimonial-card .testimonial-card-head .testimonial-user-heading {
+    padding-left: 1rem;
+}
+.testimonial-user-heading h5 {
+    font-weight: 600;
+    line-height: 1;
+}
+.testimonial-user-heading p {
+    color: rgb(94, 93, 93);
+}
+
+.testimonial .testimonial-card .testimonial-card-body p {
+    margin-top: 1.8rem;
+    color: var(--light-text);
+}
+
+
+.testimonial .testimonial-card:hover {
+    box-shadow:2px 4px 20px 1px rgba(45, 45, 45, 0.13);
+    cursor: pointer;
+    transition: all 0.3s;
+}

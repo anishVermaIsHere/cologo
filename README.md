@@ -1,8 +1,8 @@
 # Landing Page 
 
-** A Responsive Landing Page designed from scratch with HTML, CSS and JavaScript **
+**A Responsive Landing Page designed from scratch with HTML, CSS and JavaScript**
 
-** Included sections are **
+**Included sections are**
 
 1. Header Section with Navbar.
 
